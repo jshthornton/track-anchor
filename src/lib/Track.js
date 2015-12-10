@@ -4,6 +4,9 @@ export default class {
   constructor(callback) {
     this._callback = callback;
 
+    this._bindFns();
+    this._bindEvents();
+
     this._track();
   }
 
